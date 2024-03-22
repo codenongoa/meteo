@@ -4,15 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import PhotoComponent from './component/PhotoComponent'
 import Todo from './component/Todo'
+import { Route,Routes } from 'react-router-dom'
+import Acceuil from './Acceuil'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Todo />
-    <PhotoComponent />
-    </>
+    <Routes>
+        <Route  exact path="/" Component ={Acceuil} />
+        <Route  exact path="/photo" Component ={PhotoComponent} />
+        <Route  exact path="/todo" Component ={Todo} />
+     
+      
+    </Routes>
   )
 }
 
