@@ -18,9 +18,6 @@ const Todo = () => {
         });
     })
 
-
-
-
     return (
         <div>
             <h1> TODO LIST API</h1>
