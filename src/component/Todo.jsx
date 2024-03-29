@@ -20,7 +20,7 @@ const Todo = () => {
 
     return (
         <div>
-            <h1> TODO LIST API</h1>
+            <h1 className="text-xl"> TODO LIST API</h1>
             <div className="container d">
             <div className="row">
                {todos.map((todo) => (
